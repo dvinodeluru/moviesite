@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Welcome to Asian Cinemas</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/docstyle.css">
+<script type="text/javascript">
+ document.createElement('header');
+ document.createElement('hgroup');
+ document.createElement('nav');
+ document.createElement('menu');
+ document.createElement('section');
+ document.createElement('article');
+ document.createElement('aside');
+ document.createElement('footer');
+</script>
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/headerfooter.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script>
+$(document).ready(function() {
+	$("#submenu2").show();
+$(".canteen").parent('li').mouseover(  function(){
+	$("#submenu2").show();
+}
+); 
+
+$(".canteen").parent('li').mouseout(  function(){
+	$("#submenu2").show();
+}
+); 
+
+$("#submenu2").mouseover(
+function() {
+	$(this).show();
+	$(".canteen").parent("li").addClass("active");
+}
+);
+
+$("#submenu2").mouseout(
+function() {
+	$(this).hide();
+	$(".canteen").parent("li").removeClass("active");
+}
+);
+
+$('#beverage-name').ddslick(); //custom dropdown
+$('#beverage-unit').ddslick(); //custom dropdown
+$('#beverage-item').ddslick(); //custom dropdown
+$('#beverage-quantity').ddslick(); //custom dropdown
+});
+</script>
+</head>
+<body>
+<div id="main-wrapper">
+  <header id="header">
+    <div class="wrapper">
+      <div class="logo"><a href="index.html"><img src="images/logo-asiancinemas.jpg" alt="" width="153" height="45" border="0"></a></div>
+      <div class="topnavigation fr">
+        <ul>
+          <li>Welcome John</li>
+          <li class="last"><a href="#">Logout</a></li>
+        </ul>
+        <div class="clear"></div>
+        <div class="date">Date: 01/10/2013</div>
+      </div>
+    </div>
+  </header>
+  <div class="clear"></div>
+  <nav id="nav">
+    <div class="wrapper">
+      <ul class="menu">
+        <li><a href="#" class="cinemas">Cinemas</a></li>
+        <li class="active"><a href="ManageCategories.html" class="canteen">Canteen</a></li>
+        <li><a href="ManageRoles.html" class="manage-roles">Manage Roles</a></li>
+        <li><a href="ManageUsers.html" class="manage-users">Manage Users</a></li>
+        <li><a href="AccessRights.html" class="access-rights">Access Rights</a></li>
+        <li><a href="ManageRegions.html" class="manage-regions">Manage Regions</a></li>
+        <li><a href="ManageLocations.html" class="manage-location">Manage Location</a></li>
+        <li><a href="ManageTheatres.html" class="manage-theatres">Manage Theatres</a></li>
+        <li class="last"><a href="ChangePassword.html" class="change-password">Change Password</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="submenu2">
+    <div class="wrapper">
+      <ul>
+        <li><a href="ManageCategories.html">Manage Categories</a></li>
+        <li><a href="ManageItems.html" >Manage Items</a></li>
+        <li><a href="articles.html" class="active">Articles</a></li>
+        <li><a href="Stock.html">Stock</a></li>
+        <li><a href="POS_Identity.html">POS Identity</a></li>
+        <li class="no-borders"><a href="PriceCard.html">Price Card</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--wrapper-->
+  <div id="wrapper">
+    <div class="innerpages-wrapper">
+      <div class="heading-wrapper">
+        <h1>Articles</h1>
+      </div>
+      <div class="clear"></div>
+      <div class="inner-continer">
+        <div class="form" id="artciles">
+          <div class="form-two-column">
+            <div class="form-row">
+              <div class="label"> Category Name: </div>
+              <div class="input-field">
+                <select id="beverage-name">
+                  <option>Beverages</option>
+                  <option>Chips Flavours</option>
+                  <option>Pop corn</option>
+                  <option>Drinks</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label"> Unit of measurement: </div>
+              <div class="input-field">
+                <select id="beverage-unit">
+                  <option>ml</option>
+                  <option>ml</option>
+                  <option>ml</option>
+                  <option>ml</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label"> Cost Prize: </div>
+              <div class="input-field">
+                <input name="" type="text" class="textbox">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label"> &nbsp; </div>
+              <div class="input-field"> <span class="btn pushtop-10"><a href="#">Add</a></span><span class="btn pushtop-10"><a href="#">Cancel</a></span> </div>
+            </div>
+          </div>
+          <div class="form-two-column two">
+            <div class="form-row">
+              <div class="label"> Item Name: </div>
+              <div class="input-field">
+                <select id="beverage-item">
+                  <option>Coke Tin</option>
+                  <option>Lays</option>
+                  <option>Salted Pop Corn</option>
+                  <option>Thums Up</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label"> Size:</div>
+              <div class="input-field">
+                <select id="beverage-quantity">
+                  <option>300</option>
+                  <option>300</option>
+                  <option>300</option>
+                  <option>300</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label"> Article Name:</div>
+              <div class="input-field">
+                <input name="" type="text" class="textbox">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="clear"></div>
+        <div class="clear"></div>
+        <table width="100%" cellpadding="0" cellspacing="0" class="grid pushtop-40">
+          <tr>
+            <th width="38">S.No.</th>
+            <th width="166" align="left" class="td-padding">Article Name</th>
+            <th width="135" align="left" class="td-padding">Category</th>
+            <th width="116" align="left" class="td-padding">Item Name</th>
+            <th width="78" align="left" class="td-padding">U.O.M</th>
+            <th width="78" align="left" class="td-padding">Size</th>
+            <th width="66" align="left" class="td-padding">CP</th>
+            <th width="86">Edit</th>
+            <th width="86">Delete</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="td-padding">Coke 300 ml </td>
+            <td class="td-padding">Beverages</td>
+            <td class="td-padding">Coke</td>
+            <td class="td-padding">ml</td>
+            <td class="td-padding">300</td>
+            <td class="td-padding">30.00</td>
+            <td align="center"><a href="#"><img src="images/edit-icon.png" alt=""></a></td>
+            <td align="center"><a href="#"><img src="images/delete-icon.png" alt=""></a></td>
+          </tr>
+          <tr class="altRow">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr class="">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr class="altRow">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="push"></div>
+  </div>
+  <!--/wrapper-->
+</div>
+<!--footer-->
+<footer id="footer"> Copyright 2013 © Asian Cinemas. All rights reserved. <span class="footerlinks"><a href="#">Privacy</a> - <a href="#">Terms of Use</a></span> </footer>
+<!--/footer-->
+</body>
+</html>
