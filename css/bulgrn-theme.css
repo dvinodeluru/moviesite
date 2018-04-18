@@ -1,0 +1,124 @@
+﻿#header
+{
+    background-color: #fff;
+    color: #444444;
+}
+
+.logo
+{
+    background: transparent url("../images/logo-asiancinemas-blk.png") no-repeat 50%;
+}
+
+#header .topnavigation ul li a, #nav ul li li:hover a, a:link, a:active, a:hover, a:visited
+{
+    color: #005f71;
+}
+
+#header li, #header b
+{
+    color: #444;
+}
+
+#header .topnavigation ul li + li
+{
+    border-left: 1px solid #444;
+}
+
+#nav
+{
+    background-color: #005f71;
+}
+
+    #nav ul li a, #nav ul li li a
+    {
+        color: #fff;
+    }
+
+    #nav ul li a
+    {
+        border-right: 1px solid #b7b7b7;
+    }
+
+    #nav li img
+    {
+        display: none;
+    }
+
+    #nav ul li:hover, #nav ul li.active, #nav ul div, .buttons:hover
+    {
+        background-color: #007a8d;
+    }
+
+    #nav ul li li:hover
+    {
+        background-color: #fff;
+    }
+
+.buttons
+{
+    background-color: #005f71;
+    border: 1px solid #4399a9;
+}
+
+#wrapper .heading-wrapper
+{
+    background: #4399a9 none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.innerpages-wrapper .inner-continer h1
+{
+    color: #3673a7;
+}
+
+#nav a span
+{
+    height: 32px;
+    background: transparent url() no-repeat 50% 0;
+}
+
+#listCinemas a span
+{
+    background-image: url("/images/icon-cinemas-w.png");
+}
+
+#listCategories a span
+{
+    background-image: url("/images/icon-canteen-w.png");
+}
+
+#listUsers a span
+{
+    background-image: url("/images/icon-manageusers-w.png");
+}
+
+#listAccessRights a span
+{
+    background-image: url("/images/icon-accessrights-w.png");
+}
+
+#listRegions a span
+{
+    background-image: url("/images/icon-manage-regions-w.png");
+}
+
+#listLocations a span
+{
+    background-image: url("/images/icon-manage-location-w.png");
+}
+
+#listAreas a span
+{
+    background-image: url("/images/icon-management-w.png");
+}
+
+#listTheaters a span
+{
+    background-image: url("/images/icon-manage-theatres-w.png");
+}
+
+#listReports a span
+{
+    background-image: url("/images/icon-report-w.png");
+}

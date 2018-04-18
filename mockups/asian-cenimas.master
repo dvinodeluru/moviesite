@@ -1,0 +1,410 @@
+﻿<%-- SPG:
+
+This HTML file has been associated with a SharePoint Master Page (.master file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .master file, and any rename, move, or deletion operations will be reciprocated.
+
+To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://hydspl-wvproc01:40000/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fhydspl%2Dwvproc01%3A40000%2F%5Fcatalogs%2Fmasterpage%2Fasian%2Dcenimas%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
+
+ --%>
+<%@Master language="C#"%>
+<%@Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="wssucw" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx"%>
+<%@Register TagPrefix="wssucmui" TagName="MUISelector" Src="~/_controltemplates/15/MUISelector.ascx"%>
+<%@Register TagPrefix="PublishingRibbon" TagName="PublishingRibbon" Src="~/_controltemplates/15/Ribbon.ascx"%>
+<!DOCTYPE html >
+<SharePoint:SPHtmlTag lang="en" runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;">
+    <head runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        
+        
+        
+        
+        <meta name="GENERATOR" content="Microsoft SharePoint" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <SharePoint:RobotsMetaTag runat="server">
+        </SharePoint:RobotsMetaTag>
+        <SharePoint:PageTitle runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+                <SharePoint:ProjectProperty Property="Title" runat="server">
+                </SharePoint:ProjectProperty>
+            </asp:ContentPlaceHolder>
+        </SharePoint:PageTitle>
+        <SharePoint:StartScript runat="server">
+        </SharePoint:StartScript>
+        <SharePoint:CssLink runat="server" Version="15">
+        </SharePoint:CssLink>
+        <SharePoint:CacheManifestLink runat="server">
+        </SharePoint:CacheManifestLink>
+        <SharePoint:PageRenderMode runat="server" RenderModeType="Standard">
+        </SharePoint:PageRenderMode>
+        <SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:CustomJSUrl runat="server">
+        </SharePoint:CustomJSUrl>
+        <SharePoint:SoapDiscoveryLink runat="server">
+        </SharePoint:SoapDiscoveryLink>
+        <SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">
+            </asp:ContentPlaceHolder>
+            <SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">
+            </SharePoint:DelegateControl>
+            <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">
+            </asp:ContentPlaceHolder>
+        </SharePoint:AjaxDelta>
+        <SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">
+        </SharePoint:CssRegistration>
+        <SharePoint:AjaxDelta id="DeltaSPWebPartManager" runat="server">
+            <WebPartPages:SPWebPartManager runat="server">
+            </WebPartPages:SPWebPartManager>
+        </SharePoint:AjaxDelta>
+        
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        
+        <link href="/_catalogs/masterpage/icon/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/flexslider.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <!-- jQuery &#38; Helper library -->
+        <script src="/js/jquery-1.10.2.min.js">//<![CDATA[
+        //]]></script>
+        <script src="/js/bootstrap.min.js">//<![CDATA[
+        //]]></script>
+        <script src="/js/jquery.flexslider-min.js">//<![CDATA[
+        //]]></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+  <script src="js/html5shiv.js">//<![CDATA[//]]></script>
+  <script src="js/respond.min.js">//<![CDATA[//]]></script>
+<![endif]-->
+        
+    </head>
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();">
+        <SharePoint:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" />
+        <SharePoint:ImageLink runat="server" />
+        <SharePoint:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server">
+            <asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />        
+        
+        
+        <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">
+            <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnonaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+            <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnoffaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+        </SharePoint:SPSecurityTrimmedControl>
+        <div id="ms-designer-ribbon">
+            <PublishingRibbon:PublishingRibbon runat="server" />
+            
+        </div>
+        <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">
+            <wssucw:Welcome runat="server" EnableViewState="false">
+            </wssucw:Welcome>
+        </SharePoint:SPSecurityTrimmedControl>
+        
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer">
+                <header class="home-alternate" id="header">
+                    <!-- Logo -->
+                    <div class="navbar" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation
+                                    </span>
+                                    <span class="icon-bar">
+                                    </span>
+                                    <span class="icon-bar">
+                                    </span>
+                                    <span class="icon-bar">
+                                    </span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <img alt="Mannat Logo" src="/_catalogs/masterpage/images/asiancinemas-logo-blk.png" />
+                                </a>
+                            </div>
+                            <div class="navbar-collapse navbar-right collapse posit">
+                                <ul class="nav navbar-nav">
+                                    <li class="navOn">
+                                        <a href="#">Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#about">About
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/_catalogs/masterpage/contact-page.html">Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/.nav-collapse -->
+                        </div>
+                    </div>
+                    <!-- Logo End -->
+                </header>
+                <section class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <img src="/images/banner/nuvvila_movie_wallpapers_posters_61.jpg" />
+                            </li>
+                            <li>
+                                <img src="/images/banner/dhoom3.jpg" />
+                            </li>
+                            <li>
+                                <img src="/images/banner/avengers.jpg" />
+                            </li>
+                            <li>
+                                <img src="/images/banner/gabbar_singh_new_year_special_wallpaper.jpg" />
+                            </li>
+                            <li>
+                                <img src="/images/banner/bhimavarmbullodu.jpg" />
+                            </li>
+                            <li>
+                                <img src="/images/banner/nenokadine.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </section>
+                <section class="container content" id="portoflio">
+                    <section id="portfolio-grid" class="row">
+                        <div class="wrapper wf col-sm-12">
+                            <ul class="unstyled" id="Grid">
+                                <li class="mix col-sm-3">
+                                    <div class="white-wrap">
+                                        <div class="image-holder">
+                                            <img alt="Movie Poster" src="/_catalogs/masterpage/images/movie-tw/movie-poster.png" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mix col-sm-3">
+                                    <div class="white-wrap">
+                                        <div class="text-holder">
+                                            <h3>Nenokedine
+                                            </h3>
+                                            <p>
+                                                <label class="lbltitles">Director:
+                                                </label>
+                                                <span class="lblinfo">Sukumar
+                                            
+                                                </span>
+                                                <label class="lbltitles">Cast:
+                                                </label>
+                                                <span class="lblinfo">Mahesh Babu, kajol agrawal
+                                            
+                                                </span>
+                                                <label class="lbltitles">Music:
+                                                </label>
+                                                <span class="lblinfo">Devi sri parsad
+                                            
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="booktk">
+                                            <a href="/_catalogs/masterpage/inner-page.html" class="booktk_link">Book Ticket
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mix col-sm-3">
+                                    <div class="white-wrap">
+                                        <div class="image-holder">
+                                            <img alt="Movie Poster" src="/_catalogs/masterpage/images/movie-bw/movie-poster.png" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mix col-sm-3">
+                                    <div class="white-wrap">
+                                        <div class="text-holder">
+                                            <h3>Movie Title
+                                            </h3>
+                                            <p>
+                                                <label class="lbltitles">Director:
+                                                </label>
+                                                <label class="lbltitles">Cast:
+                                                </label>
+                                                <label class="lbltitles">Music:
+                                                </label>
+                                            </p>
+                                        </div>
+                                        <div class="booktk">
+                                            <a href="/_catalogs/masterpage/inner-page.html" class="booktk_link">Book Ticket
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mix col-sm-3">
+                                    <div class="white-wrap">
+                                        <div class="image-holder">
+                                            <img alt="Movie Poster" src="/_catalogs/masterpage/images/movie-hw/movie-poster.png" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mix col-sm-3">
+                                    <div class="white-wrap">
+                                        <div class="text-holder">
+                                            <h3>Movie Title
+                                            </h3>
+                                            <p>
+                                                <label class="lbltitles">Director:
+                                                </label>
+                                                <label class="lbltitles">Cast:
+                                                </label>
+                                                <label class="lbltitles">Music:
+                                                </label>
+                                            </p>
+                                        </div>
+                                        <div class="booktk">
+                                            <a href="/_catalogs/masterpage/inner-page.html" class="booktk_link">Book Ticket
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mix col-sm-3">
+                                    <div class="white-wrap">
+                                        <div class="image-holder">
+                                            <img alt="Movie Poster" src="/_catalogs/masterpage/images/movie-tw/movie-poster.png" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mix col-sm-3">
+                                    <div class="white-wrap">
+                                        <div class="text-holder">
+                                            <h3>Movie Title
+                                            </h3>
+                                            <p>
+                                                <label class="lbltitles">Director:
+                                                </label>
+                                                <label class="lbltitles">Cast:
+                                                </label>
+                                                <label class="lbltitles">Music:
+                                                </label>
+                                            </p>
+                                        </div>
+                                        <div class="booktk">
+                                            <a href="/_catalogs/masterpage/inner-page.html" class="booktk_link">Book Ticket
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <footer id="footer">
+                    <!--footer starts -->
+                    <section class="container">
+                        <section class="col-sm-3">
+                            <ul>
+                                <!-- latest posts widget starts-->
+                                <li>
+                                    <a href="/_catalogs/masterpage/blog-post.html">Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/_catalogs/masterpage/blog-post.html">About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/_catalogs/masterpage/blog-post.html">Contact
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/_catalogs/masterpage/blog-post.html">Terms and Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="col-sm-3">
+                            <ul>
+                                <!-- latest posts widget starts-->
+                                <li>
+                                    <a href="/_catalogs/masterpage/blog-post.html">Theaters
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/_catalogs/masterpage/blog-post.html">Franchise with us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/_catalogs/masterpage/blog-post.html">FAQ's
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/_catalogs/masterpage/blog-post.html">Tender Quote
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- lastest posts widget ends-->
+                        </section>
+                        <section class="col-sm-3">
+                            <ul class="social-buttons cf">
+                                <li>
+                                    <a href="http://twitter.com/share" class="socialite twitter-share" data-text="asiancinemas" data-url="http://twitter.com/asiancinemas" data-count="vertical" rel="nofollow" target="_blank">
+                                        <span class="vhidden">Share on Twitter
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.facebook.com/sharer.php?u=http://www.asiancinemas.com" class="socialite facebook-like" data-href="http://facebook.com/asiancinemas" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank">
+                                        <span class="vhidden">Share on Facebook
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="col-sm-3 text-right">
+				© 2014 Asian Cinemas
+		
+                        </section>
+                    </section>
+                </footer>
+                <script src="/js/socialite.js">//<![CDATA[
+                //]]></script>
+                <script type="text/javascript" src="/_catalogs/masterpage/js/scripts.js">//<![CDATA[
+                //]]></script>
+                <div data-name="ContentPlaceHolderMain">
+                    
+                    
+                    <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">
+                        <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                            <div class="DefaultContentBlock" style="border:medium black solid; background:yellow; color:black; margin:20px; padding:10px;">
+            This div, which you should delete, represents the content area that your Page Layouts and pages will fill. Design your Master Page around this content placeholder.
+        
+                            </div>
+                        </asp:ContentPlaceHolder>
+                    </SharePoint:AjaxDelta>
+                    
+                </div>
+            </div>
+        </div>
+    <SharePoint:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server"><asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server"><SharePoint:formdigest runat="server" /></asp:ContentPlaceHolder></SharePoint:AjaxDelta></SharePoint:SharePointForm><SharePoint:AjaxDelta id="DeltaPlaceHolderUtilityContent" runat="server"><asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server" /></SharePoint:AjaxDelta><asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSearchArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTopNavBar" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarDataSource" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftActions" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSiteName" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageDescription" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageImage" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderMiniConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderNavSpacer" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="WSSDesignConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="SPNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchBottom" Visible="False" runat="server" /></body>
+</SharePoint:SPHtmlTag>
